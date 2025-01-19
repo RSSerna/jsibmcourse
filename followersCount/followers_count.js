@@ -4,9 +4,14 @@ function increaseCount() {
   displayCount(); // Display the count
   checkCountValue(); // Check count value and display messages
 }
+function resetCount() {
+  count = 0; // Increment the count by 1
+  displayCount(); // Display the count
+  alert("Your Instagram post was reset!");
+}
 
 function displayCount() {
-document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
+    document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
 }
 
 function checkCountValue() {
