@@ -14,6 +14,7 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = document.getElementById('designation').value;
     document.getElementById('userProductChoice').innerHTML = document.getElementById('productType').value;
     document.getElementById('userFeedback').innerHTML = document.getElementById('feedbackText').value;
+    document.getElementById('userExperince').innerHTML = document.getElementById('userExperinceText').value;
 
     document.getElementById('userInfo').style.display = 'block';
 }
