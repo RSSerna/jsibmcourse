@@ -52,3 +52,21 @@ xhr.onload = function() {
         articlesDiv.appendChild(articleDiv);
     });
 }
+
+var urlHealth = './health.json';
+
+var xhr2 = new XMLHttpRequest();
+
+xhr2.open('GET', urlHealth, true);
+
+xhr2.responseType = 'json';
+
+xhr2.send();
+
+xhr2.onload = function() { 
+    var health = xhr2.response;
+    console.log(health);
+    var healthData = `<h2>${health.name}</h2> <h3>${health.place}</h3>`;
+    
+    document.getElementById('health').innerHTML = healthData;
+}
