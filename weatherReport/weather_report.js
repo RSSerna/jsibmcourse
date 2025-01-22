@@ -1,4 +1,4 @@
-const weatherK = 'f369fff6c9adea429a2effe82080bfcc';
+const weatherK = '';
 function showWeatherFromCoordinates(event) {
     event.preventDefault();
     const lat = document.getElementById('lat').value;
